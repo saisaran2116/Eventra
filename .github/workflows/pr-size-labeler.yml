@@ -59,7 +59,7 @@ jobs:
           ALL_LABELS=("size/XS" "size/S" "size/M" "size/L" "size/XL")
           for L in "${ALL_LABELS[@]}"; do
             if [ "$L" != "$LABEL" ]; then
-              gh pr edit "$PR_URL" --remove-label "$L" || true
+              gh pr edit "$PR_URL" --remove-label "$L" 2>/dev/null || true
             fi
           done
           

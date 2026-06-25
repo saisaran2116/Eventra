@@ -24,8 +24,8 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: ["./src/setupTests.js"],
-    include: ["src/**/*.test.{js,jsx,ts,tsx}", "tests/navbar.keyboard.test.js"],
-    exclude: ["src/**/*.spec.{js,jsx}", "tests/e2e/**", "tests/helpers/**", "tests/loaders/**", "tests/*.test.mjs"],
+    include: ["src/**/*.test.{js,jsx,ts,tsx}", "tests/**/*.test.{js,jsx,ts,tsx,mjs}"],
+    exclude: ["src/**/*.spec.{js,jsx}", "tests/e2e/**", "tests/helpers/**", "tests/loaders/**"],
     css: true,
   },
   resolve: {
